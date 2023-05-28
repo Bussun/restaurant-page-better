@@ -1,0 +1,27 @@
+.header {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../res/restaurant_interior.webp');
+    background-size: cover;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.restName {
+    font-family: 'Licorice', cursive;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.restaurantDesc {
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.restaurantDesc.subTitle {
+    font-family: 'Aoboshi One', serif;
+}

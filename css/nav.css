@@ -1,0 +1,51 @@
+nav {
+    position: fixed;
+    padding: .5rem 1rem;
+    top: 50%;
+    right: 1vw;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.65);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    opacity: .4;
+    transition: all .1s ease-in-out;
+    z-index: 1000;
+}
+
+nav:hover,
+nav:focus {
+    opacity: 1;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.nav > * {
+    transition: .3s ease all;
+    text-align: right;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+@media screen and (hover: none) {
+    nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    nav {
+        display: none
+    }
+}

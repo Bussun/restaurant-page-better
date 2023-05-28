@@ -1,0 +1,59 @@
+.menu {
+  padding: 1.5rem;
+}
+
+.menuHeading {
+  font-family: "Aoboshi One", serif;
+  font-size: 2rem;
+}
+
+.menuContainer {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.otherDishes:last-child {
+    align-self: flex-start;
+}
+
+.dish {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 5px;
+  width: 45vw;
+  padding: 0.5rem;
+  background-color: #f5fef4;
+}
+
+.mainDishes,
+.dessertsDishes,
+.otherDishes {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.dishName {
+  font-family: "Aoboshi One", "Inter", sans-serif;
+}
+
+.dishDesc {
+  font-family: serif;
+  color: grey;
+}
+
+@media screen and (max-width: 850px) {
+  .dish {
+    width: 80vw;
+    align-self: center;
+  }
+
+  .mainDishes,
+  .dessertsDishes,
+  .otherDishes {
+    width: calc(100vw - 3rem);
+  }
+}

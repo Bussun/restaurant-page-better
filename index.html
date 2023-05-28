@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Votre restaurant à deux pas de chez vous !"
+    />
+    <title>SlowFood - Prenez votre temps</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/about.css">
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <nav class="nav_background">
+      <div class="nav">
+        <a href="#header" class="presBtn link">Accueil</a>
+        <a href="#about" class="aboutBtn link">À propos</a>
+        <a href="#menu" class="menuBtn link">Menu</a>
+      </div>
+    </nav>
+    <header class="header" id="header">
+      <h1 class="restName">SlowFood</h1>
+      <p class="restaurantDesc subTitle">Bienvenue au SlowFood!</p>
+      <p class="restaurantDesc">
+        Prenez votre temps pour explorer tout ce que nous avons à proposer!
+      </p>
+    </header>
+    <section class="about" id="about">
+        <div class="aboutText">
+            <h2 class="aboutHeading">À propos de nous</h2>
+            <p>Bienvenue au SlowFood! Depuis notre ouverture nous n'avons qu'une seule ambition: que les gens puissent manger de bons plats faits maisons!</p>
+        </div>
+        <div id="map"></div>
+    </section>
+    <section class="menu" id="menu">
+      <h2 class="menuHeading">Menu</h2>
+      <div class="menuContainer">
+        <div class="container">
+            <h3>Plats:</h3>
+            <div class="mainDishes"></div>
+        </div>
+        <div class="container">
+            <h3>Desserts:</h3>
+            <div class="dessertsDishes"></div>
+        </div>
+        <div class="container">
+            <h3>Autres:</h3>
+            <div class="otherDishes"></div>
+        </div>
+      </div>
+    </section>
+    <script src="./index.js" defer></script>
+  </body>
+</html>

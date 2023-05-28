@@ -1,0 +1,84 @@
+{
+    "Dishes": [
+        {
+            "name": "Pain au basilic et garam masala",
+            "description" : "Pain moelleux fait avec du basilic frais et du garam masala.",
+            "type": "main",
+            "ingredients": [
+                "Farine", "Sel", "Levure", "Beurre", "Eau", "Oignons", "Basilic", "Garam masala"
+            ]
+        },
+        {
+            "name": "Lasagne aubergine-pesto",
+            "type": "main",
+            "description" : "Des couches de pâtes fraîches aux œufs, entrecoupées d'aubergines fraîches et de pesto rouge.",
+            "ingredients": [
+                "Tomate", "Passata", "Oignon", "Ail", "Pâtes", "Origan", "Poivre noir", "Basilic", "Aubergine", "Pesto"
+            ] 
+        },
+        {
+            "name": "Lasagnes bœuf-courge",
+            "type": "main",
+            "description" : "Des couches de pâtes fraîches aux œufs entrecoupées de viande de bœuf et de courge poivrée",
+            "ingredients": [
+                "Tomate", "Passata", "Oignon", "Ail", "Pâtes", "Origan", "Poivre noir", "Basilic", "Bœuf", "Courge"
+            ]
+        },
+        {
+            "name": "Lasagne poivrons-fromage",
+            "type": "main",
+            "description" : "Des couches de pâtes fraîches aux œufs entrecoupées de poivrons verts et de fromage affiné",
+            "ingredients": [
+                "Tomate", "Passata", "Oignon", "Ail", "Pâtes", "Origan", "Poivre noir", "Basilic", "Poivrons", "Fromage"
+            ]
+        },
+        {
+            "name": "Salade à l'oignon rouge avec son basilic",
+            "type": "main",
+            "description": "Une salade d'oignons rouge qui met l'eau à la bouche",
+            "ingredients": [
+                "Concombre", "Laitue", "Oignon rouge", "Basilic"
+            ]
+        },
+        {
+            "name": "Gâteau au potiron",
+            "type": "dessert",
+            "description": "Copieux gâteau à base de potiron frais et de sucre en poudre",
+            "ingredients": [
+                "Farine", "Beurre", "Œufs", "Sucre", "Potiron"
+            ]
+        },
+        {
+            "name": "Muffins à l'amande et à la cannelle",
+            "type": "dessert",
+            "description": "Muffins à base d'amandes grillées et de cannelle",
+            "ingredients": [
+                "Farine", "Beurre", "Œufs", "Sucre", "Amandes", "Cannelle"
+            ]
+        },
+        {
+            "name": "Brioches pomme-banane",
+            "type": "dessert",
+            "description": "Petits pains moelleux à la pomme et à la banane",
+            "ingredients": [
+                "Farine", "Beurre", "Œufs", "Sucre", "Pommes", "Bananes"
+            ]
+        },
+        {
+            "name": "Crêpes pomme-banane",
+            "type": "dessert",
+            "description": "Crêpes gourmandes avec de la banane et des pomme à l'intérieur",
+            "ingredients": [
+                "Farine", "Huile", "Œufs", "Lait", "Sucre", "Pommes", "Bananes"
+            ]
+        },
+        {
+            "name": "Café",
+            "type": "other",
+            "description": "Avec des graines de café provenant des meilleurs producteurs.",
+            "ingredients": [
+                "Café", "Eau", "Sucre"
+            ]
+        }
+    ]
+}

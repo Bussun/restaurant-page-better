@@ -1,0 +1,28 @@
+.about {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.aboutHeading {
+    font-family: 'Aoboshi One', serif;
+    font-size: 2rem;
+}
+
+#map {
+    height: 50vh;
+    width: 50vw;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+    .about {
+        flex-direction: column;
+    }
+
+    #map {
+        width: 85vw;
+        align-self: center;
+    }
+}
