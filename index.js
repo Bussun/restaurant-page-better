@@ -2,25 +2,30 @@ const menuBtn = document.querySelector('.menuBtn');
 const aboutBtn = document.querySelector('.aboutBtn');
 const presBtn = document.querySelector('.presBtn');
 
-function removeActiveClass() {
-    menuBtn.classList.remove('active');
-    aboutBtn.classList.remove('active');
-    presBtn.classList.remove('active');
+function removeActiveClass(element) {
+    if (element.classList.contains('menu') === true) {
+        menuBtn.classList.remove('active');
+    }
+    if (element.classList.contains('header') === true) {
+        presBtn.classList.remove('active');
+    }
+    if (element.classList.contains('about') === true) {
+        aboutBtn.classList.remove('active');
+    }
 }
 
 let observerOptions = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.51
+    threshold: 0.1
 };
 
 let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting === false) {
-            
+            removeActiveClass(entry.target);
         }
         else {
-            removeActiveClass();
             if (entry.target.classList.contains('menu') === true) {
                 menuBtn.classList.add('active');
             }
