@@ -16,15 +16,18 @@
     <link rel="stylesheet" href="./css/about.css">
 
     <link
-      rel="stylesheet"
+      rel="preload"
+      as="style"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
+      onload="this.onload=null;this.rel='stylesheet'"
     />
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
+      rel="preconnect"
     ></script>
   </head>
   <body>
@@ -43,11 +46,23 @@
       </p>
     </header>
     <section class="about" id="about">
+      <div style="display: flex;">
         <div class="aboutText">
             <h2 class="aboutHeading">À propos de nous</h2>
-            <p>Bienvenue au SlowFood! Depuis notre ouverture nous n'avons qu'une seule ambition: que les gens puissent manger de bons plats faits maisons!</p>
+            <div class="about_TextContent">
+              <p>
+                Bienvenue au SlowFood! Depuis notre ouverture nous n'avons qu'une seule ambition: 
+                que les gens puissent manger de bons plats faits maisons! Notre situation idéale au 
+                coeur d'un espace vert vous permettra de profiter de la terrasse et de son air frais
+                tout au long de la saison estivale!
+              </p>
+            </div>
         </div>
         <div id="map"></div>
+      </div>
+      <div class="gallery">
+        <h2 class="galleryHeading">Voici un avant-goût de nos plats!</h2>
+      </div>
     </section>
     <section class="menu" id="menu">
       <h2 class="menuHeading">Menu</h2>

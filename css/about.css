@@ -1,13 +1,25 @@
 .about {
     padding: 1.5rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
 }
 
-.aboutHeading {
+.aboutHeading,
+.galleryHeading {
     font-family: 'Aoboshi One', serif;
     font-size: 2rem;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+}
+
+.about_TextContent {
+    padding: 1rem;
 }
 
 #map {
